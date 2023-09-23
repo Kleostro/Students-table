@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица студентов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="student">
+        <h1 class="student__title">Таблица студентов</h1>
+        <form action="" class="student__form">
+            <label for="" class="student__form-label">
+                <strong class="student__form-text">Фамилия</strong>
+                <input type="text" class="student__form-input student__form-input-surname">
+                <span class="student__form-error-text student__form-error-text-surname"></span>
+            </label>
+            <label for="" class="student__form-label">
+                <strong class="student__form-text">Имя</strong>
+                <input type="text" class="student__form-input student__form-input-name">
+                <span class="student__form-error-text student__form-error-text-name"></span>
+            </label>
+            <label for="" class="student__form-label">
+                <strong class="student__form-text">Отчество</strong>
+                <input type="text" class="student__form-input student__form-input-middlename">
+                <span class="student__form-error-text student__form-error-text-middlename"></span>
+            </label>
+            <label for="" class="student__form-label">
+                <strong class="student__form-text">Дата рождения</strong>
+                <input type="date" class="student__form-input student__form-input-birthday">
+                <span class="student__form-error-text student__form-error-text-birthday"></span>
+            </label>
+            <label for="" class="student__form-label">
+                <strong class="student__form-text">Год начала обучения</strong>
+                <input type="number" class="student__form-input student__form-input-education-year">
+                <span class="student__form-error-text student__form-error-text-education-year"></span>
+            </label>
+            <label for="" class="student__form-label">
+                <strong class="student__form-text">Факультет</strong>
+                <input type="text" class="student__form-input student__form-input-faculty">
+                <span class="student__form-error-text student__form-error-text-faculty"></span>
+            </label>
+            <button class="student__form-btn btn-reset" type="submit">Добавить</button>
+        </form>
+        <div class="student__sort">
+            <h2 class="student__sort-title">Отсортировать по:</h2>
+            <div class="student__sort-inputs">
+                <input type="text" class="student__form-input" id="filterName" placeholder="ФИО">
+                <input type="text" class="student__form-input" id="filterFaculty" placeholder="Факультету">
+                <input type="number" class="student__form-input" id="filterStartYear" placeholder="Началу обучения">
+                <input type="number" class="student__form-input" id="filterEndYear" placeholder="Окончанию обучения">
+            </div>
+        </div>
+        <table class="student__table">
+            <thead class="student__table-thead">
+                <tr class="student__table-tr">
+                    <td class="student__table-td" id="index">№</td>
+                    <td class="student__table-td" id="name">Ф.И.О. студента</td>
+                    <td class="student__table-td" id="birthday">Дата рождения и возраст</td>
+                    <td class="student__table-td" id="education-year">Год начала обучения</td>
+                    <td class="student__table-td" id="faculty">Факультет</td>
+                </tr>
+            </thead>
+            <tbody class="student__table-tbody"></tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
